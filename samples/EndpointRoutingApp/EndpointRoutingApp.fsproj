@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="../../src/Giraffe/Giraffe.fsproj" />
+    <ProjectReference Include="../../src/Giraffe.OpenApi/Giraffe.OpenApi.fsproj" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
 </Project>
